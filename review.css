@@ -1,0 +1,159 @@
+body {
+    background-image: linear-gradient(rgba(67, 151, 220, 0.2), rgba(0, 0, 0, 0.3)),
+        url(./assets/images/homeslide1.jpg);
+    font-family: "Mulish", sans-serif;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    .card {
+        width: 578px;
+        height: 920px;
+        background: #1c1b2b;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+        .title {
+            color: #ffffff;
+            font-size: 22px;
+            margin-left: 35px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            img {
+                width: 23px;
+                height: 23px;
+                position: absolute;
+                left: 50px;
+                color: #8c8aa7;
+            }
+
+            input[type="text"] {
+                width: 450px;
+                height: 70px;
+                background: #e3e3e7;
+                border: 1px solid #64b16f;
+                border-radius: 10px;
+                margin: 18px 0px;
+                box-sizing: border-box;
+                padding-left: 55px;
+                font-size: 18px;
+                color: #25c432;
+                cursor: text;
+            }
+                :focus {
+                    outline: none !important;
+                }
+            
+        
+
+        .tags-wrapper {
+            max-height: 130px;
+            margin: 35px;
+        }
+            .tags-header {
+                color: #ffffff;
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+
+            .tags-container 
+                .tag {
+                    display: inline-flex;
+                    background: #1d1c2d;
+                    color: #8c8aa7;
+                    border-radius: 5px;
+                    padding: 12px;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+
+                .selected {
+                    background: #8780f8;
+                    color: #ffffff;
+                }
+            
+        
+
+        .reviews-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .review-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 450px;
+                height: 250px;
+                background: #2c2b3f;
+                border-radius: 10px;
+                margin: 10px 0px;
+            }
+                .review-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+                    .name-group {
+                        display: flex;
+                        align-items: center;
+                    }
+                        .initials {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 48px;
+                            height: 48px;
+                            margin-right: 12px;
+                            border-radius: 50%;
+                            background: #d56a6a;
+                        }
+                    
+
+                    .rating 
+                        i {
+                            color: #f3d779;
+                        }
+                    
+                
+
+                .review-description {
+                    color: #ffffff;
+                    font-weight: 400;
+                    margin: 0px 45px;
+                }
+
+                .review-details {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px 45px;
+                    align-items: center;
+                    color: #8c8aa7;
+                }
+                    .share-group {
+                        display: flex;
+                        padding: 8px;
+                        border: 1px solid #1f1e2d;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                        i {
+                            margin-right: 10px;
+                        }
