@@ -1,0 +1,252 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@font-face {
+font-family: "Righteous";
+src: url("../fonts/BalooChettan-Regular.ttf");
+src: url("../fonts/BalooChettan-Regular.ttf");
+}
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./Assets/Images/2000x1080_jpg-2021_Camping_ParksCanada.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 5rem;
+    font-family: Poppins, sans-serif;
+}
+.login-caption
+{
+    margin-block: 15rem;
+    padding-block: 1rem;
+    width: 35%;
+    line-height: 1.7;
+}
+.login-caption h1{
+    color: #fff;
+    letter-spacing: 1.6px;
+    font-weight: 420;
+    font-size: 3.5rem;
+}
+.welcome
+{
+    color: #fff;
+}
+.login-caption p{
+    color: #fff;
+    font-size: 1.75rem;
+}
+.login-caption::before{
+  content: '';
+  position: absolute;
+  top: 43%;
+  left: 3%;
+  width: 0.15rem;
+  height: 6rem;
+  background-color: #0b74c5;
+}
+.form_container {
+    width: fit-content;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-inline: 1.5rem;
+    background: linear-gradient(rgba(228, 233, 239, 1),rgba(241, 242, 244, 1));
+    box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+      0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+      0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+    font-family: "Inter", sans-serif;
+  }
+  .title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 2rem;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    color: #0b74c5;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    max-width: 80%;
+    text-align: center;
+    line-height: 1.1rem;
+    font-family: Poppins, sans-serif;
+    color: #8B8E98;
+  }
+  
+  .input_container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  input 
+  {
+    color: #212121;
+  }
+  
+  .icon {
+    width: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 12px;
+    bottom: 9px;
+  }
+  
+  .input_label {
+    font-size: 0.75rem;
+    color: #8B8E98;
+    font-weight: 600;
+  }
+  
+  .input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 40px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    filter: drop-shadow(0px 1px 0px #efefef)
+      drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+  }
+  
+  .sign-in_btn {
+   padding: 15px 95px;
+   background-color: #0b74c5;
+   border: 0;
+  font-size: 0.9rem;
+   border-radius: 10px;
+   outline: none;
+  }
+  .sign-in_btn span{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .sign-in_btn:hover 
+  {
+    opacity: 0.5;
+  }
+  
+  .register span
+  {
+    color: #1f1b1b;
+  }
+  .register-link
+  {
+    color: #182339;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+  }
+  .register-link:hover
+  {
+    font-weight: bolder;
+    color: #0b74c5;
+  }
+  .note {
+    font-size: 0.75rem;
+    color: #8B8E98;
+    text-decoration: underline;
+  }
+    .footer-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6rem;
+      padding-block: 2rem;
+  
+    }
+  
+    li {
+      list-style: none;
+      padding: 0.5rem 0;
+  
+    }
+  
+    li a {
+      text-decoration: none;
+      color: var(--white);
+  
+    }
+  
+    .contact-section p {
+      padding-block: 0.2rem;
+    }
+  
+    .socials {
+      padding-block: 2rem;
+      /* display: flex;
+      gap: 1rem; */
+    }
+
+  @media screen and (max-width: 768px) {
+    main
+    {
+      flex-direction: column;
+      margin-inline: 1rem;
+      background-size: contain;
+    }
+    .login-caption
+    {
+      margin-block: 10rem;
+      margin-inline: 0rem;
+      padding-inline: 0.5rem;
+      width: 100%;
+    }
+    .login-caption::before{
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 3%;
+      width: 0.15rem;
+      height: 6rem;
+      background-color: #0b74c5;
+    }
+    .form_container{
+    height: 100vh;
+    }
+    .title{
+      text-align: center;
+      margin-block: 1rem;
+        }
+  }
