@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Wild Swimming and Camping Site</title>
+        <!--Custom Resources-->
+    <link href="../contact.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--AOS.JS library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+</head>
+<header>
+ <!--Navigation Bar Section-->
+ <div class="contact-header_section">
+    <header>
+        <h1>GWSC</h1>
+        <span class="menu-open" id="menuOpen">&#9776;</span>
+         <!--Desktop Navigation-->
+<nav class="desktop-nav">
+        <a href="./index.html"class="nav-links">Home</a>
+        <a href="./sites.html"class="nav-links">Sites</a>
+        <a href="./features.html"class="nav-links">Features</a>
+        <a href="./review.html"class="nav-links">Reviews</a>        
+        <a href="./contact.html"class="nav-links">Contact</a> 
+    </nav> 
+    <div class="btn-forms">
+        <button class="btn-login"><a href="./login.html" class="primary-btn">Log In</a> <i class="uil uil-user-circle"></i></button>
+        <button class="btn-sign-in"><a href="./signup.html" class="secondary-btn">Register</a> <i class="uil uil-user-plus"></i></button>
+    </div>  
+    
+    <!--Mobile Menu-->
+    <div class="mobile-menu-component" id="mobileMenuComp">
+        <span class="menu-close" id="menuClose">&#120;</span>
+        <nav class="mobile-nav">
+            <a href="./index.html" class="nav-links-mobile">Home</a>
+            <a href="./sites.html" class="nav-links-mobile">Sites</a>
+            <a href="./features.html" class="nav-links-mobile">Features</a>
+            <a href="./sites.html" class="nav-links-mobile">Pricing</a>
+            <a href="./review.html" class="nav-links-mobile">Reviews</a>        
+            <a href="./contact.html" class="nav-links-mobile">Contact</a> 
+            <!--Login and Sign In Buttons-->
+            <div class="btn-forms-mobile">
+                <button class="btn-login">Login <i class="uil uil-user-circle"></i></button>
+                <button class="btn-sign-in"><a href="./signup.html">Register</a> <i class="uil uil-user-plus"></i></button>
+            </div>       
+        </nav>
+    </div>
+  </header>
+<body>
+    <main>
+        <!--Contact Section-->
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Contact Form</h3>
+                <h4>Contact us for more Enquiries</h4>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+                <p class="copyright">Designed by <a href="https://seyram.com" target="_blank" title="Colorlib">Seyram</a>
+                </p>
+            </form>
+        </div>
+    </main>
+          <!--Scripts-->
+          <script src="../index.js"></script>
+          <!--AOS CDN Script-->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <!--Initialize AOS.js-->
+          <script>AOS.init();</script>
+        </body>
+        </html>
+          
